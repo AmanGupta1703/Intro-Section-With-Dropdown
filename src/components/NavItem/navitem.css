@@ -1,0 +1,40 @@
+.nav__item {
+  position: relative;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav__text {
+  color: var(--color-neutral-02);
+}
+
+.nav__text:hover {
+  color: var(--color-neutral-03);
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin: 2rem 0 0;
+  padding: 0 0 0 2rem;
+
+  @media screen and (min-width: 1024px) {
+    background-color: var(--color-neutral-01);
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.8);
+    border-radius: 1.4rem;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+  }
+}
+
+.nav__item:nth-child(2) .dropdown {
+  left: -15%;
+}

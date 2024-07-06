@@ -1,0 +1,48 @@
+:root {
+  --ff-primary: "Epilogue", sans-serif;
+
+  --color-neutral-01: hsl(0, 0%, 98%);
+  --color-neutral-02: hsl(0, 0%, 41%);
+  --color-neutral-03: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-neutral-01);
+  font-family: var(--ff-primary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100vh;
+  max-width: 100vw;
+}
